@@ -1,0 +1,51 @@
+.analytics-offering {
+    font-size: 25px;
+    margin: 6% 0%;
+}
+
+.industries-heading {
+    color: #007676;
+    font-size: 25px;
+    /* Color for the main title */
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.industry-timeline .ant-timeline-item-head {
+    border-color: #007676;
+    /* Customize the timeline dot color */
+}
+
+.timeline-content h3 {
+    /* border: 2px solid red; */
+    font-family: poppins;
+    font-size: 101%;
+    color: #007676;
+    /* Industry name color */
+}
+
+.timeline-content ul li {
+    /* border: 2px solid rgb(0, 255, 34); */
+    color: #ffffff;
+    /* Description color */
+}
+
+li {
+    font-family: poppins;
+    font-size: 14px;
+}
+
+.ant-timeline .ant-timeline-item {
+    font-family: poppins;
+    position: relative;
+    margin: 0;
+    font-size: 14px;
+    list-style: none;
+}
+
+
+/* Timeline custom style targeting with specificity */
+
+.analytics-offering .ant-timeline .ant-timeline-item-tail {
+    border-inline-start: 2px solid #65a9de;
+}

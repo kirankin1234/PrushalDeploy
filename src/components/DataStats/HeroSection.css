@@ -1,0 +1,128 @@
+.hero-container {
+    position: relative;
+    background-image: url('../../assets/Hero__New.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding: 0 20px;
+    overflow: hidden;
+    margin-top: 4%;
+}
+
+.hero-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: inherit;
+    filter: blur(3px);
+    z-index: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    padding: 20px;
+}
+
+.hero-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: bold;
+    color: #fefefe;
+    margin-bottom: 12px;
+    line-height: 1.4;
+    max-width: 90%;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.hero-subtitle {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    color: #fefefe;
+    line-height: 1.6;
+    max-width: 85%;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.stats-container {
+    z-index: 3;
+    width: 100%;
+    padding: 0 5%;
+    margin-top: 30px;
+}
+
+.stat-box {
+    border: 2px solid #ffcd6144;
+    border-radius: 15px;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100%;
+}
+
+.stat-box h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.stat-box p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.highlight-text {
+    color: #FFD700;
+    /* Golden color */
+}
+
+.stat-box h2 {
+    color: white;
+    /* White color for stat numbers */
+}
+
+
+/* Final mobile optimization */
+
+@media (max-width: 768px) {
+    .hero-container {
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .hero-title {
+        font-size: 0.5rem;
+        line-height: 1;
+        margin-left: -50px;
+    }
+    .hero-subtitle {
+        font-size: 0.5rem;
+        margin-bottom: 15px;
+        margin-left: -50px;
+    }
+    .stats-container {
+        margin-top: 20px;
+        padding: 0 10px;
+    }
+    .stat-box {
+        padding: 10px;
+        font-size: 0.85rem;
+    }
+    .stat-box h2 {
+        font-size: 1.3rem;
+    }
+    .stat-box p {
+        font-size: 0.85rem;
+    }
+}
