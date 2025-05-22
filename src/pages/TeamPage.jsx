@@ -34,7 +34,7 @@ const ceo = {
 };
 
 const hrManager = {
-  name: 'Mr. Shivsing Patel',
+  name: 'Mr. Shivsingh Patel',
   designation: 'Manager',
   img: emp1, // Replace with actual HR image if available
   linkedin: 'https://www.linkedin.com/in/shivsinghpatel/',
@@ -51,7 +51,7 @@ const team = [
     phone: '+91 65432 10987'
   },
   {
-    name: 'Arati Lahane',
+    name: 'Aarti Lahane',
     designation: 'AI/ML Developer',
     img: emp1,
     linkedin: 'https://www.linkedin.com/in/arati-lahane/',
@@ -139,7 +139,7 @@ const testimonials = [
   },
   {
     quote: "“What makes this place special is how leadership fosters psychological safety - everyone's voice is heard and valued equally in decision making.”",
-    name: "Arati Lahane",
+    name: "Aarti Lahane",
     role: "AI ML Developer"
   },
   {

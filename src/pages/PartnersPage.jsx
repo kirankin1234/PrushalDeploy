@@ -78,20 +78,20 @@ const PartnersPage = () => {
               style={{
                 fontFamily: 'Poppins, sans-serif',
                 fontWeight: 600,
-                fontSize: '38px',
+                fontSize: '32px',
                 color: '#007676',
                 textShadow: '1px 1px 2px rgba(0,0,0,0.1)',
                 marginBottom: '10px',
                 marginTop: '-20px',
               }}
             >
-Collaborating with Visionary Partners for Sustainable Growth            </Title>
+             Collaborate with Visionary Partners for Sustainable Growth            </Title>
           </motion.div>
           <Paragraph
             style={{
               fontFamily: 'Poppins, sans-serif',
 
-              fontSize: 20,
+              fontSize: 18,
               maxWidth: 800,
               margin: '0 auto',
               color: '#007676',

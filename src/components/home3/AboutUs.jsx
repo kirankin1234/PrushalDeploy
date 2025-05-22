@@ -7,7 +7,7 @@ import {
   HeartOutlined,
   CheckCircleOutlined,
 } from "@ant-design/icons";
-import "./AboutUs.css";
+import "./AboutUs1.css";
 
 const { Title, Paragraph } = Typography;
 
@@ -26,7 +26,7 @@ const aboutUsData = [
   },
   {
     title: "Our Values",
-    content: ["Prioritizing Customer-Centric Excellence.", "Deliver Beyond Promise"],
+    content: ["Prioritizing Excellence Through Customer Centricity.", "Deliver Beyond Promise"],
     icon: <HeartOutlined />,
   },
   {
@@ -51,61 +51,112 @@ const AboutUs = () => {
         About Us
       </Title>
       <Row gutter={[24, 24]} justify="center">
-  {aboutUsData.slice(0, 3).map((section, index) => (
-    <Col xs={24} sm={12} md={8} key={index}>
-      <motion.div
-        whileHover={{ scale: 1.04, boxShadow: "0 8px 32px rgba(0,0,0,0.10)" }}
-        whileTap={{ scale: 0.97 }}
-        className="about-card"
-        style={{ height: "100%",width:"450px"   }} // Ensures motion div stretches fully
-      >
-        <Card
-          bordered={false}
-          className="about-card-inner"
-          style={{ minHeight: "300px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}
-        >
-          <div>
-            <div className="icon-wrap">{section.icon}</div>
-            <Title level={4} className="card-title">
-              {section.title}
-            </Title>
-            <Paragraph className="card-content">
-              {Array.isArray(section.content) ? (
-                <ul>
-                  {section.content.map((item, idx) => (
-                    <li key={idx}>{item}</li>
-                  ))}
-                </ul>
-              ) : (
-                section.content
-              )}
-            </Paragraph>
-          </div>
-        </Card>
-      </motion.div>
-    </Col>
-  ))}
-</Row>
+        {aboutUsData.slice(0, 3).map((section, index) => (
+          <Col
+            xs={24}
+            sm={24}
+            md={8}
+            lg={8}
+            xl={8}
+            key={index}
+            style={{ display: "flex" }}
+          >
+            <motion.div
+              whileHover={{
+                scale: 1.04,
+                boxShadow: "0 8px 32px rgba(0,0,0,0.10)",
+              }}
+              whileTap={{ scale: 0.97 }}
+              className="about-card"
+              style={{
+                width: "100%",
+                height: "100%",
+                minWidth: 0,
+                flex: 1,
+              }}
+            >
+              <Card
+                bordered={false}
+                className="about-card-inner"
+                style={{
+                  minHeight: "300px",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
+                  height: "100%",
+                }}
+              >
+                <div>
+                  <div className="icon-wrap">{section.icon}</div>
+                  <Title level={4} className="card-title">
+                    {section.title}
+                  </Title>
+                  <Paragraph className="card-content">
+                    {Array.isArray(section.content) ? (
+                      <ul>
+                        {section.content.map((item, idx) => (
+                          <li key={idx}>{item}</li>
+                        ))}
+                      </ul>
+                    ) : (
+                      section.content
+                    )}
+                  </Paragraph>
+                </div>
+              </Card>
+            </motion.div>
+          </Col>
+        ))}
+      </Row>
 
-<Row gutter={[24, 24]} justify="center" style={{ marginTop: "30px" }} className="special-row">
-        <Col xs={24} sm={24} md={16}>
+      <Row
+        gutter={[24, 24]}
+        justify="center"
+        style={{ marginTop: "30px" }}
+        className="special-row"
+      >
+        <Col
+          xs={24}
+          sm={24}
+          md={20}
+          lg={16}
+          xl={12}
+          style={{ display: "flex" }}
+        >
           <motion.div
-            whileHover={{ scale: 1.02, boxShadow: "0 8px 32px rgba(0,0,0,0.10)" }}
+            whileHover={{
+              scale: 1.02,
+              boxShadow: "0 8px 32px rgba(0,0,0,0.10)",
+            }}
             whileTap={{ scale: 0.97 }}
             className="about-card about-card-special"
+            style={{ width: "100%" }}
           >
-            <Card bordered={false} className="about-card-inner about-card-inner-special">
-              <div className="icon-wrap">{aboutUsData[3].icon}</div>
-              <Title level={4} className="card-title">
-                {aboutUsData[3].title}
-              </Title>
-              <Paragraph className="card-content">
-                <ul>
-                  {aboutUsData[3].content.map((item, idx) => (
-                    <li key={idx}>{item}</li>
-                  ))}
-                </ul>
-              </Paragraph>
+            <Card
+              bordered={false}
+              className="about-card-inner about-card-inner-special"
+              style={{
+                width: "100%",
+                minHeight: "300px",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+                height: "100%",
+              }}
+            >
+              <div>
+                <div className="icon-wrap">{aboutUsData[3].icon}</div>
+                <Title level={4} className="card-title">
+                  {aboutUsData[3].title}
+                </Title>
+                <Paragraph className="card-content">
+                  <ul>
+                    {aboutUsData[3].content.map((item, idx) => (
+                      <li key={idx}>{item}</li>
+                    ))}
+                  </ul>
+                </Paragraph>
+              </div>
             </Card>
           </motion.div>
         </Col>

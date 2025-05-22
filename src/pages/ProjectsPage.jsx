@@ -147,22 +147,22 @@ const ProjectsPage = () => {
               style={{
                 fontFamily: 'Poppins, sans-serif',
 
-                fontWeight: 700,
-                fontSize: '42px',
+                fontWeight: 600,
+                fontSize: '36px',
                 color: '#007676',
                 textShadow: '1px 1px 2px rgba(0,0,0,0.1)',
                 marginBottom: '10px',
                 marginTop: '-20px',
               }}
             >
-              Transforming Ideas into Scalable Solutions
+              Transform Ideas into Scalable Solutions
             </Title>
           </motion.div>
           <Paragraph
             style={{
               fontFamily: 'Poppins, sans-serif',
 
-              fontSize: 20,
+              fontSize: 18,
               maxWidth: 800,
               margin: '0 auto',
               color: '#007676',

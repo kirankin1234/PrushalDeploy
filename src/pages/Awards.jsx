@@ -96,7 +96,7 @@ const Awards = () => (
           Celebrating Our Recognition
         </h2>
         <p className="hero-subheading" style={{ fontSize: 16, marginBottom: 12 }}>
-          Proud moments that showcase our journey of excellence and innovation.
+          It's Journey of excellence and innovation.
         </p>
         <Link to="/about">
           <Button type="primary" className="hero-button" style={{ backgroundColor: "#2196F3" }}>
@@ -222,107 +222,115 @@ const Awards = () => (
         Achievements
       </Title>
       <Row gutter={[16, 16]} justify="center" style={{ marginTop: "40px" }}>
-        <Col xs={8} sm={8} md={8} lg={8}>
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ type: "spring", stiffness: 300 }}
-          >
-            <Card
-              hoverable
-              style={{
-                width: "100%",
-                height: "150px",
-                textAlign: "center",
-                boxShadow: "0 10px 20px rgba(0, 0, 0, 0.1)",
-                backgroundColor: "#f9f9f9",
-                borderRadius: "10px",
-              }}
-            >
-              <CountUp
-                start={0}
-                end={50}
-                duration={2}
-                suffix="+"
-                style={{
-                  fontSize: "36px",
-                  fontWeight: "bold",
-                  color: "#333",
-                  marginBottom: "10px",
-                }}
-              />
-              <Paragraph style={{ color: "#777" }}>Projects Completed</Paragraph>
-            </Card>
-          </motion.div>
-        </Col>
-        <Col xs={8} sm={8} md={8} lg={8}>
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ type: "spring", stiffness: 300 }}
-          >
-            <Card
-              hoverable
-              style={{
-                width: "100%",
-                height: "150px",
-                textAlign: "center",
-                boxShadow: "0 10px 20px rgba(0, 0, 0, 0.1)",
-                backgroundColor: "#f9f9f9",
-                borderRadius: "10px",
-              }}
-            >
-              <CountUp
-                start={0}
-                end={30}
-                duration={2}
-                suffix="+"
-                style={{
-                  fontSize: "36px",
-                  fontWeight: "bold",
-                  color: "#333",
-                  marginBottom: "10px",
-                }}
-              />
-              <Paragraph style={{ color: "#777" }}>Clients Served</Paragraph>
-            </Card>
-          </motion.div>
-        </Col>
-        <Col xs={8} sm={8} md={8} lg={8}>
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ type: "spring", stiffness: 300 }}
-          >
-            <Card
-              hoverable
-              style={{
-                width: "100%",
-                height: "150px",
-                textAlign: "center",
-                boxShadow: "0 10px 20px rgba(0, 0, 0, 0.1)",
-                backgroundColor: "#f9f9f9",
-                borderRadius: "10px",
-              }}
-            >
-              <CountUp
-                start={0}
-                end={12}
-                duration={2}
-                suffix="+"
-                style={{
-                  fontSize: "36px",
-                  fontWeight: "bold",
-                  color: "#333",
-                  marginBottom: "10px",
-                }}
-              />
-              <Paragraph style={{ color: "#777" }}>Awards Won</Paragraph>
-            </Card>
-            
-          </motion.div>
-        </Col>
-      </Row>
+  <Col xs={24} sm={12} md={8} lg={8}>
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ type: "spring", stiffness: 300 }}
+    >
+      <Card
+        hoverable
+        style={{
+          width: "100%",
+          height: "150px",
+          textAlign: "center",
+          boxShadow: "0 10px 20px rgba(0, 0, 0, 0.1)",
+          backgroundColor: "#f9f9f9",
+          borderRadius: "10px",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+        }}
+      >
+        <CountUp
+          start={0}
+          end={50}
+          duration={2}
+          suffix="+"
+          style={{
+            fontSize: "36px",
+            fontWeight: "bold",
+            color: "#333",
+          }}
+        />
+        <Paragraph style={{ color: "#777", margin: 0 }}>Projects Completed</Paragraph>
+      </Card>
+    </motion.div>
+  </Col>
+
+  <Col xs={24} sm={12} md={8} lg={8}>
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ type: "spring", stiffness: 300 }}
+    >
+      <Card
+        hoverable
+        style={{
+          width: "100%",
+          height: "150px",
+          textAlign: "center",
+          boxShadow: "0 10px 20px rgba(0, 0, 0, 0.1)",
+          backgroundColor: "#f9f9f9",
+          borderRadius: "10px",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+        }}
+      >
+        <CountUp
+          start={0}
+          end={30}
+          duration={2}
+          suffix="+"
+          style={{
+            fontSize: "36px",
+            fontWeight: "bold",
+            color: "#333",
+          }}
+        />
+        <Paragraph style={{ color: "#777", margin: 0 }}>Clients Served</Paragraph>
+      </Card>
+    </motion.div>
+  </Col>
+
+  <Col xs={24} sm={12} md={8} lg={8}>
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ type: "spring", stiffness: 300 }}
+    >
+      <Card
+        hoverable
+        style={{
+          width: "100%",
+          height: "150px",
+          textAlign: "center",
+          boxShadow: "0 10px 20px rgba(0, 0, 0, 0.1)",
+          backgroundColor: "#f9f9f9",
+          borderRadius: "10px",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+        }}
+      >
+        <CountUp
+          start={0}
+          end={12}
+          duration={2}
+          suffix="+"
+          style={{
+            fontSize: "36px",
+            fontWeight: "bold",
+            color: "#333",
+          }}
+        />
+        <Paragraph style={{ color: "#777", margin: 0 }}>Awards Won</Paragraph>
+      </Card>
+    </motion.div>
+  </Col>
+</Row>
+
 
     {/* Call to Action */}
     <section className="testimonials" style={{ backgroundColor: "#f9f9f9", paddingTop: 32,marginTop: "50px" }}>

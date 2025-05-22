@@ -85,42 +85,44 @@
 
 .highlight-text {
     color: #FFD700;
-    /* Golden color */
 }
 
 .stat-box h2 {
     color: white;
-    /* White color for stat numbers */
 }
-
-
-/* Final mobile optimization */
 
 @media (max-width: 768px) {
     .hero-container {
         height: auto;
         padding-bottom: 30px;
     }
+    .hero-content {
+        padding: 2px 4px;
+    }
     .hero-title {
-        font-size: 0.5rem;
-        line-height: 1;
-        margin-left: -50px;
+        font-size: clamp(1.1rem, 5vw, 1.7rem);
+        line-height: 1.25;
+        margin-left: 0;
+        max-width: 65%;
+        word-break: break-word;
     }
     .hero-subtitle {
-        font-size: 0.5rem;
+        font-size: clamp(0.95rem, 3.5vw, 1.1rem);
         margin-bottom: 15px;
-        margin-left: -50px;
+        margin-left: 0;
+        max-width: 65%;
+        word-break: break-word;
     }
     .stats-container {
         margin-top: 20px;
-        padding: 0 10px;
+        padding: 0 5px;
     }
     .stat-box {
         padding: 10px;
-        font-size: 0.85rem;
+        font-size: 0.95rem;
     }
     .stat-box h2 {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
     .stat-box p {
         font-size: 0.85rem;

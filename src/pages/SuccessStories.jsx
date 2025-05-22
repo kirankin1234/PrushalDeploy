@@ -77,7 +77,7 @@ const SuccessStories = () => {
               level={1}
               style={{
                 fontWeight: 700,
-                fontSize: '42px',
+                fontSize: '36px',
                 color: '#007676',
                 textShadow: '1px 1px 2px rgba(0,0,0,0.1)',
                 marginBottom: '10px',

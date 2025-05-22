@@ -87,8 +87,10 @@ const Culture = () => {
     whileHover={{ scale: 1.02 }} 
     className="hero-content"
   >
-    <h2 className="hero-heading">We don’t just work. We grow together.</h2>
-    <p className="hero-subheading">Explore our culture that fuels innovation, collaboration, and joy.</p>
+    <h2 className=".hero-heading-culture">Don't Just work.</h2>
+        <h2>We grow together</h2>
+
+    <p className="hero-subheading">Explore culture that fuels innovation & collaboration, and joy.</p>
 <Button
         type="primary"
         className="hero-button"
