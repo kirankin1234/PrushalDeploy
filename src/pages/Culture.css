@@ -54,8 +54,9 @@ section {
     align-items: center;
 }
 
-.hero-heading-culture {
+.hero-heading {
     font-size: 36px;
+    background-color: #F8F8FF;
     margin-bottom: 12px;
     margin-left: 50px;
     margin-right: 50px;
@@ -67,6 +68,7 @@ section {
 
 .hero-subheading {
     font-size: 18px;
+    background-color: #F8F8FF;
     margin-bottom: 20px;
     margin-left: 55px;
     margin-right: 55px;

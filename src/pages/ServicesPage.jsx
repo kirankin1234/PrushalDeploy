@@ -148,19 +148,19 @@ const ServicesPage = () => {
         level={1}
         style={{
           fontWeight: 700,
-          fontSize: '42px',
+          fontSize: '36px',
           color: '#007676',
           textShadow: '1px 1px 2px rgba(0,0,0,0.1)',
           marginBottom: '10px',
           marginTop: '-15px',
         }}
       >
-        Strategic Solutions That Drive Business Growth
+        Strategic Solutions that Drive Business Growth..
       </Title>
     </motion.div>
     <Paragraph
       style={{
-        fontSize: 20,
+        fontSize: 18,
         maxWidth: 800,
         margin: '0 auto',
         color: '#007676',
@@ -229,7 +229,7 @@ const ServicesPage = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.2 }}
-              variants={fadeIn(imageFirst ? 'left' : 'right', index * 0.3)}
+              variants={fadeIn(imageFirst ? 'left' : 'right', index * 0.1)}
               style={{
                 display: 'flex',
                 flexDirection: imageFirst ? 'row' : 'row-reverse',
@@ -272,7 +272,7 @@ const ServicesPage = () => {
                   boxShadow: '0 2px 8px rgba(0, 0, 0, 0.15)',
                   objectFit: 'contain',  // Ensure the whole image is visible
                   height: '300px', // Added fixed height
-                  animation: 'float 3s ease-in-out infinite', // Added floating animation
+                  animation: 'float 1s ease-in-out infinite', // Added floating animation
                   zIndex: 1,      // Place above the gradient
                   position: 'relative',
                 }}
@@ -311,14 +311,14 @@ const ServicesPage = () => {
                     transition={{ duration: 2, repeat: Infinity, ease: 'linear' }}
                     style={{ display: 'inline-block' }}
                   >
-                    <Button
+                    {/* <Button
                       type="primary"
                       style={{ marginRight: '10px' }}
                       whileHover={{ scale: 1.1 }}
-                      transition={{ duration: 0.3 }}
+                      transition={{ duration: 0.1 }}
                     >
                       Learn More
-                    </Button>
+                    </Button> */}
                   </motion.div>
                   <motion.div
                     animate={{ y: [0, -6, 0] }}
@@ -328,7 +328,7 @@ const ServicesPage = () => {
                     <Button
                       onClick={() => navigate('/contact')}
                       whileHover={{ scale: 1.1 }}
-                      transition={{ duration: 0.3 }}
+                      transition={{ duration: 0.1 }}
                     >
                       Contact Us
                     </Button>

@@ -79,7 +79,7 @@ const DetailsPanel = ({
             style={{
               color: headingColor,
               fontWeight: 700,
-              fontSize: 18, // +2px
+              fontSize: 18,
               letterSpacing: 0.2,
             }}
           >
@@ -371,22 +371,28 @@ const CaseStudies = () => (
         borderBottom: `2.5px solid #b2e5e5`,
       }}
     >
-      <Title
-        style={{
-          color: headingColor,
-          fontFamily: "Poppins, Segoe UI, sans-serif",
-          marginBottom: 0,
-        }}
-      >
-        Case Studies
-      </Title>
+      <motion.div
+  animate={{ y: [-10, 10] }}
+  transition={{ duration: 3, repeat: Infinity, repeatType: "reverse" }}
+>
+  <Title
+    style={{
+      fontSize: 36,
+      fontWeight: 600,
+      color: headingColor,
+      fontFamily: "Poppins, Segoe UI, sans-serif",
+      marginBottom: 0,
+    }}
+  >
+    Case Studies
+  </Title>
+</motion.div>
       <Paragraph
         style={{
           color: "#007676",
-          fontSize: 20,
+          fontSize: 18,
           marginTop: 10,
           fontFamily: "Poppins, Segoe UI, sans-serif",
-          fontWeight: 500,
         }}
       >
         Explore how we’ve delivered transformative AI/ML solutions across industries.

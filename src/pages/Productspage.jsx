@@ -101,7 +101,7 @@ const ProductsPage = () => {
               style={{
                 fontFamily: 'Poppins, sans-serif',
 
-                fontWeight: 600,
+                fontWeight: 700,
                 fontSize: '36px',
                 color: '#007676',
                 textShadow: '1px 1px 2px rgba(0,0,0,0.1)',
@@ -109,7 +109,7 @@ const ProductsPage = () => {
                 marginTop: '-20px',
               }}
             >
-              Cutting Edge Products Designed to Drive Innovation
+              Cutting Edge Products Designed to Drive Innovation.
             </Title>
           </motion.div>
           <Paragraph
@@ -188,10 +188,9 @@ Empowering businesses with advanced tools to simplify processes and enhance prod
           </div>
           <Paragraph
             style={{
-              fontFamily: 'Poppins, sans-serif',
-
-              fontSize: 16,
-              color: '#333',
+             fontFamily: 'Poppins, sans-serif',
+              fontSize: 15,
+              color: '#black',
               lineHeight: '1.7',
               maxWidth: 500,
               whiteSpace: 'pre-line',

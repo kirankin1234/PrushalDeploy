@@ -26,7 +26,7 @@ const aboutUsData = [
   },
   {
     title: "Our Values",
-    content: ["Prioritizing Excellence Through Customer Centricity.", "Deliver Beyond Promise"],
+    content: ["Customer Satisfaction First.", "Deliver Beyond Promise"],
     icon: <HeartOutlined />,
   },
   {
@@ -50,64 +50,64 @@ const AboutUs = () => {
       <Title level={2} className="section-title">
         About Us
       </Title>
-      <Row gutter={[24, 24]} justify="center">
-        {aboutUsData.slice(0, 3).map((section, index) => (
-          <Col
-            xs={24}
-            sm={24}
-            md={8}
-            lg={8}
-            xl={8}
-            key={index}
-            style={{ display: "flex" }}
-          >
-            <motion.div
-              whileHover={{
-                scale: 1.04,
-                boxShadow: "0 8px 32px rgba(0,0,0,0.10)",
-              }}
-              whileTap={{ scale: 0.97 }}
-              className="about-card"
-              style={{
-                width: "100%",
-                height: "100%",
-                minWidth: 0,
-                flex: 1,
-              }}
-            >
-              <Card
-                bordered={false}
-                className="about-card-inner"
-                style={{
-                  minHeight: "300px",
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "space-between",
-                  height: "100%",
-                }}
-              >
-                <div>
-                  <div className="icon-wrap">{section.icon}</div>
-                  <Title level={4} className="card-title">
-                    {section.title}
-                  </Title>
-                  <Paragraph className="card-content">
-                    {Array.isArray(section.content) ? (
-                      <ul>
-                        {section.content.map((item, idx) => (
-                          <li key={idx}>{item}</li>
-                        ))}
-                      </ul>
-                    ) : (
-                      section.content
-                    )}
-                  </Paragraph>
-                </div>
-              </Card>
-            </motion.div>
-          </Col>
-        ))}
-      </Row>
+      <Row gutter={[24, 24]} justify="center" align="stretch">
+  {aboutUsData.slice(0, 3).map((section, index) => (
+    <Col
+      xs={24}
+      sm={24}
+      md={8}
+      lg={8}
+      xl={8}
+      key={index}
+      style={{ display: "flex" }} // ensures equal height for all Cols
+    >
+      <motion.div
+        whileHover={{
+          scale: 1.04,
+          boxShadow: "0 8px 32px rgba(0,0,0,0.10)",
+        }}
+        whileTap={{ scale: 0.97 }}
+        className="about-card"
+        style={{
+          width: "100%",
+          height: "100%",
+          display: "flex",
+          flexDirection: "column",
+        }}
+      >
+        <Card
+          bordered={false}
+          className="about-card-inner"
+          style={{
+            flex: 1, // stretch to fill parent
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+          }}
+        >
+          <div style={{ flexGrow: 1 }}>
+            <div className="icon-wrap">{section.icon}</div>
+            <Title level={4} className="card-title">
+              {section.title}
+            </Title>
+            <Paragraph className="card-content">
+              {Array.isArray(section.content) ? (
+                <ul>
+                  {section.content.map((item, idx) => (
+                    <li key={idx}>{item}</li>
+                  ))}
+                </ul>
+              ) : (
+                section.content
+              )}
+            </Paragraph>
+          </div>
+        </Card>
+      </motion.div>
+    </Col>
+  ))}
+</Row>
+
 
       <Row
         gutter={[24, 24]}

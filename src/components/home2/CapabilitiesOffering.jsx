@@ -16,8 +16,8 @@ const capabilitiesData = [
   {
     capability: "AI & ML",
     description: [
-      "Machine Learning Model Development",
-      "Deep Learning Solutions",
+      "Machine Learning & Deep Learning",
+      "Agentic AI solutions",
       "Natural Language Processing (NLP)",
       "Computer Vision Applications"
     ]

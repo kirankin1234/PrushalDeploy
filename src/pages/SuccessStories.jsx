@@ -160,12 +160,13 @@ const SuccessStories = () => {
                 </div>
                 <Paragraph
                   style={{
-                    fontSize: 16,
-                    color: '#333',
-                    lineHeight: '1.7',
-                    maxWidth: 500,
-                    whiteSpace: 'pre-line',
-                    textAlign: 'justify',
+              fontFamily: 'Poppins, sans-serif',
+              fontSize: 15,
+              color: '#black',
+              lineHeight: '1.7',
+              maxWidth: 500,
+              whiteSpace: 'pre-line',
+              textAlign: 'justify',
                   }}
                 >
                   {story.desc}

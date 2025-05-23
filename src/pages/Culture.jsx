@@ -87,10 +87,12 @@ const Culture = () => {
     whileHover={{ scale: 1.02 }} 
     className="hero-content"
   >
-    <h2 className=".hero-heading-culture">Don't Just work.</h2>
-        <h2>We grow together</h2>
+<h2 className="hero-heading" style={{ backgroundColor: '#F8F8FF' }}>
+  Don't Just work.
+</h2>
+        <h2 style={{ backgroundColor: '#F8F8FF' }} >We grow together</h2>
 
-    <p className="hero-subheading">Explore culture that fuels innovation & collaboration, and joy.</p>
+    <p className="hero-subheading">Explore culture that fuels innovation,collaboration & joy.</p>
 <Button
         type="primary"
         className="hero-button"
@@ -217,7 +219,7 @@ const Culture = () => {
           { img: training, text: "Team building games in full swing!" },
           { img: training1, text: "Cultural night filled with colors & fun." },
           { img: training2, text: "Field visit to historic Rajgad Fort." },
-          { img: training3, text: "Workshop on modern dairy automation." },
+          { img: training3, text: "Workshop on AI and Data Analytics." },
         ].map((item, index) => (
           <div className="carousel-item" key={`${index}-${Math.random()}`}>
             <img src={item.img} alt={`Activity ${index + 1}`} className="gallery-img" />

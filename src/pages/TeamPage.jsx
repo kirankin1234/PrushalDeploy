@@ -14,15 +14,8 @@ import './teampage.css';
 
 // Images (replace with your real images)
 import ceoImg from '../assets/ceo.jpg';
-import emp1 from '../assets/birthday.jpg';
-import emp2 from '../assets/birthday.jpg';
-import emp3 from '../assets/birthday.jpg';
-import emp4 from '../assets/birthday.jpg';
-import emp5 from '../assets/birthday.jpg';
-import emp6 from '../assets/birthday.jpg';
-import emp7 from '../assets/birthday.jpg';
-import emp8 from '../assets/birthday.jpg';
-import emp9 from '../assets/birthday.jpg';
+import emp1 from '../assets/teammember.jpg';
+
 
 const ceo = {
   name: 'Mr. Kushal Sharma',
@@ -46,7 +39,7 @@ const team = [
   {
     name: 'Ashish Bhosale',
     designation: 'Full Stack Developer',
-    img: emp4,
+    img: emp1,
     linkedin: 'https://www.linkedin.com/in/ashish-bhosale/',
     phone: '+91 65432 10987'
   },
@@ -60,14 +53,14 @@ const team = [
   {
     name: 'Priyanshu Sharma',
     designation: 'Full Stack Developer',
-    img: emp2,
+    img: emp1,
     linkedin: 'https://www.linkedin.com/in/pri-sharma/',
     phone: '+91 87654 32109'
   },
   {
     name: 'Gayatri Rajguru',
     designation: 'Junior Developer',
-    img: emp7,
+    img: emp1,
     linkedin: '',
     phone: ''
   },
@@ -75,21 +68,21 @@ const team = [
   {
     name: 'Kiran Gaikwad',
     designation: 'Junior Developer',
-    img: emp5,
+    img: emp1,
     linkedin: 'https://www.linkedin.com/in/kiran-gaikwad/',
     phone: '+91 8999649495'
   },
   {
     name: 'Samruddhi Manikeri',
     designation: 'Junior Developer',
-    img: emp3,
+    img: emp1,
     linkedin: 'https://www.linkedin.com/in/samruddhi-manikeri/',
     phone: '+91 76543 21098'
   },
   {
     name: 'Shraddha Irale',
     designation: 'Junior Developer',
-    img: emp6,
+    img: emp1,
     linkedin: '',
     phone: ''
   },
@@ -97,14 +90,14 @@ const team = [
   {
     name: 'Shweta Bamane',
     designation: 'Junior Developer',
-    img: emp8,
+    img: emp1,
     linkedin: '',
     phone: ''
   },
   {
     name: 'Shrutika Desai',
     designation: 'Junior Developer',
-    img: emp9,
+    img: emp1,
     linkedin: '',
     phone: ''
   },
@@ -118,14 +111,14 @@ const team = [
   {
     name: 'Nikita Pawale',
     designation: 'AI/ML Intern',
-    img: emp2,
+    img: emp1,
     linkedin: '',
     phone: ''
   },
   {
     name: 'Akanksha Shivale',
     designation: 'AI/ML Intern',
-    img: emp3,
+    img: emp1,
     linkedin: '',
     phone: ''
   }

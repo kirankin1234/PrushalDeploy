@@ -142,6 +142,7 @@ Corporate Trainings.
               "Be and be recognized as the best solution provider for the businesses and individuals across the globe.",
             icon: FaRocket,
             color: "#007676",
+            
           },
           {
             title: "Our Mission",
@@ -194,7 +195,7 @@ Corporate Trainings.
                   <Title level={4} style={{ color: item.color, marginBottom: 8 }}>
                     {item.title}
                   </Title>
-                  <Paragraph style={{ color: "#555", fontSize: "14px" }}>
+                  <Paragraph style={{ color: "#555", fontSize: "16px" }}>
                     {item.description}
                   </Paragraph>
                 </div>

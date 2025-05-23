@@ -21,7 +21,8 @@ import ProductDetail from './pages/ProductDetail';
 import CaseStudies from './pages/CaseStudies';  
 import Awards from './pages/Awards'; 
 import TeamPage from './pages/TeamPage';   
-import ScrollToTop from './components/ScrollToTop';                              
+import ScrollToTop from './components/ScrollToTop';    
+import ChatBot from './components/chatbot/ChatBot';                          
 
 const { Content } = Layout;
 
@@ -78,6 +79,7 @@ const App = () => {
           {/* <ContactUs /> */}
           <FooterComponent />
         </Layout>
+        <ChatBot />
       </Router>
     </ConfigProvider>
   );

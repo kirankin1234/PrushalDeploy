@@ -114,8 +114,12 @@ const Resources = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h1>Explore Our Resources</h1>
-        <p>Browse documents, templates, guides, and more</p>
+<motion.div
+  animate={{ y: [-10, 10] }}
+  transition={{ duration: 3, repeat: Infinity, repeatType: 'reverse' }}
+>
+  <h1 style={{ margin: 0 }}>Explore Our Resources</h1>
+</motion.div>        <p>Browse documents, templates, guides, and more</p>
         <Search
           placeholder="Search resources..."
           enterButton
